@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gender Prediction</title> <!-- Title of the webpage -->
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Link to the external CSS file for styling -->
+</head>
+<body>
+    <div id="app" class="App">
+        <header class="App-header">
+            <h1>Mr. or Ms.?</h1> <!-- Main heading of the webpage -->
+            <form id="predictionForm">
+                <label>
+                    Name:
+                    <input type="text" id="nameInput"/> <!-- Input field for name -->
+                </label>
+                <div>
+                    <!-- Radio buttons for selecting gender or using API for prediction -->
+                    <label>
+                        <input type="radio" name="gender" value="male"/> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female"/> Female
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="api"checked/> API
+                    </label>
+                </div>
+                <button class="btn" type="submit">Submit</button> <!-- Submit button for the form -->
+                <button class="btn" type="button" id="saveButton">Save</button> <!-- Button to save the current input -->
+            </form>
+            <div id="errorMessage" class="error-message"></div> <!-- Area to display error messages -->
+            <div id="predictionResult">
+                <h2>Prediction</h2> <!-- Section to display prediction results -->
+                <p></p>
+            </div>
+            <div>
+                <h2>Saved Answers</h2> <!-- Section to display saved answers -->
+                <ul id="savedAnswers"></ul>
+                <button class="btn" id="clearAllButton">Clear All</button> <!-- Button to clear all saved answers -->
+            </div>
+        </header>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to the external JavaScript file -->
+</body>
+</html>

@@ -1,0 +1,65 @@
+
+
+.App {
+    text-align: center; /* Centers the text inside the .App container */
+}
+
+/* Style for the header section of the application */
+.App-header {
+    min-height: 100vh; /* Ensures the header takes at least the full height of the viewport */
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Stacks child elements vertically */
+    align-items: center; /* Horizontally centers the child elements */
+    justify-content: center; /* Vertically centers the child elements */
+    font-size: calc(10px + 2vmin); /* Dynamic font size calculation based on viewport size */
+    color: white; /* Text color for the header */
+}
+
+/* is is for my background picture */
+body{
+    background-image: url(https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: center; /* Center the image in the container */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-attachment: fixed; /* Optional: Makes the background fixed during scroll */
+
+}
+/* Style for displaying error messages */
+.error-message {
+    color: red; /* Red text color to highlight errors */
+    margin-top: 10px; /* Adds space above the error message */
+}
+
+/* Style for buttons in the application */
+.btn {
+    display: inline-block; /* Elements are laid out in a line, like words in a sentence */
+    color: white; /* Text color for buttons */
+    background-color: green; /* Background color for buttons */
+    border: none; /* Removes the default border of buttons */
+    padding: 10px 20px; /* Padding inside the buttons */
+    margin: 5px; /* Margin around the buttons */
+    border-radius: 5px; /* Rounded corners for the buttons */
+    cursor: pointer; /* Changes the mouse cursor to signify a clickable item */
+    text-decoration: none; /* Removes any text decoration (like underlines) */
+    font-size: 15px; /* Sets the font size for button text */
+    font-family: inherit; /* Inherits the font family from parent elements */
+}
+/* after clicking on button it animates the button */
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* this is for the delte button */
+.btn-delete {
+    display: inline-block; /* Elements are laid out in a line, like words in a sentence */
+    color: white; /* Text color for buttons */
+    background-color: red; /* Background color for buttons */
+    border: none; /* Removes the default border of buttons */
+    padding: 5px 15px; /* Padding inside the buttons */
+    margin: 20px; /* Margin around the buttons */
+    border-radius: 5px; /* Rounded corners for the buttons */
+    cursor: pointer; /* Changes the mouse cursor to signify a clickable item */
+    text-decoration: none; /* Removes any text decoration (like underlines) */
+    font-size: 15px; /* Sets the font size for button text */
+    font-family: inherit; /* Inherits the font family from parent elements */
+}
